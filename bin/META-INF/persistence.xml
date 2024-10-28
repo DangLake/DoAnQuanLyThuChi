@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+          http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+        version="2.1">
+         <persistence-unit name="giang" transaction-type="RESOURCE_LOCAL">
+          	<class>model.user</class>
+          	<class>model.transactions</class>
+          	<class>model.notifications</class>
+          	<class>model.categories</class>
+          	<class>model.budgets</class>
+          	<properties>
+          		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/detaiduc"/>
+         		<property name="javax.persistence.jdbc.user" value="root"/>
+         		<property name="javax.persistence.jdbc.password" value=""/>
+          	</properties>
+          </persistence-unit>
+      </persistence>
